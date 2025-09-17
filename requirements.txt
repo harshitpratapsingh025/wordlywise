@@ -1,4 +1,13 @@
 fastapi
 uvicorn[standard]
 python-dotenv
-SQLAlchemy 
+SQLAlchemy
+pydantic
+pydantic-settings
+pydantic[email]
+alembic
+python-jose
+passlib[bcrypt]
+asyncpg
+psycopg2-binary
+greenlet
