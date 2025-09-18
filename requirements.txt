@@ -11,3 +11,6 @@ passlib[bcrypt]
 asyncpg
 psycopg2-binary
 greenlet
+openai
+langchain_core
+langchain_groq

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api import users, auth
+from app.api import users, auth, word
 from app.db.session import async_engine
 from contextlib import asynccontextmanager
 
@@ -16,6 +16,7 @@ app = FastAPI(title="AI Blog — Backend", lifespan=lifespan)
 
 # Include routers
 app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
+app.include_router(word.router, prefix="/api/word", tags=["word"])
 app.include_router(users.router, prefix="/api/users", tags=["users"])
 
 @app.get("/")
